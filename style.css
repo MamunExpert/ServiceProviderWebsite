@@ -343,7 +343,8 @@ about breakpoints */
 
 
 
-
+/* --------------------------
+team section start here  */
 
 .box-wrapper {
     gap: 15px;
@@ -414,3 +415,6 @@ about breakpoints */
     font-size: 15px;
     line-height: 15px;
 }
+
+/* --------------------------
+team section end here  */
