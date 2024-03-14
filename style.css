@@ -15,7 +15,7 @@ body {
     font-family: Raleway, sans-serif;
 }
 
-.container{
+.container {
     padding: 128px 48px;
     padding-bottom: 0;
 }
@@ -82,16 +82,16 @@ nav {
     background-color: var(--brand-color);
 }
 
-.menu-list ul a{
+.menu-list ul a {
     text-decoration: none;
     color: var(--black);
 }
 
-.menu-list ul a:hover{
+.menu-list ul a:hover {
     color: #fff;
 }
 
-.menu-list ul .bar a:hover{
+.menu-list ul .bar a:hover {
     color: var(--brand-color);
 }
 
@@ -216,12 +216,12 @@ about section start here  */
     grid-template-columns: repeat(4, 1fr);
 }
 
-.section-header{
+.section-header {
     text-align: center;
     margin-bottom: 58px;
 }
 
-.section-header h2{
+.section-header h2 {
     color: var(--brand-color);
     font-size: 24px;
     text-transform: uppercase;
@@ -229,13 +229,13 @@ about section start here  */
     margin-bottom: 16px;
 }
 
-.section-header h4{
+.section-header h4 {
     color: var(--black);
     font-size: 18px;
     line-height: 32px;
 }
 
-#about .box-wrapper .box{
+#about .box-wrapper .box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -250,11 +250,11 @@ about section start here  */
     font-size: 64px;
 }
 
-#about .box-wrapper .box i:hover{
+#about .box-wrapper .box i:hover {
     color: var(--brand-color);
 }
 
-#about .box-wrapper .box h3{
+#about .box-wrapper .box h3 {
     font-size: 18px;
     text-transform: capitalize;
     font-weight: normal;
@@ -274,24 +274,18 @@ about section start here  */
 about breakpoints */
 
 
-@media screen and (max-width:800px){
+@media screen and (max-width:834px) {
     .box-wrapper {
         gap: 18px;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media screen and (max-width:670px){
-    .box-wrapper {
-        gap: 25px;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width:480px){
-    .container{
-        padding-left:18px;
-        padding-right:18px;
+
+@media screen and (max-width:480px) {
+    .container {
+        padding-left: 18px;
+        padding-right: 18px;
     }
 
     .box-wrapper {
@@ -299,7 +293,7 @@ about breakpoints */
         grid-template-columns: repeat(1, 1fr);
     }
 
-    #about .box-wrapper .box{
+    #about .box-wrapper .box {
         gap: 18px;
         padding: 0 32px;
     }
@@ -308,36 +302,6 @@ about breakpoints */
 
 /* ------------------
   about section end */
-
-#pricing .price-card-wrapper {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-#pricing .price-card{
-    border-radius: 25px;
-    box-shadow: 2px 5px 7px rgba(51, 51, 51, 0.3);
-}
-
-.price-card .price-header{
-    width: 100%;
-    height: 120px;
-    clip-path: polygon(0 0, 100% 0%,100% 85%,0% 100%);
-}
-
-.price-basic .price-header{
-    background: linear-gradient(135deg,#36ff8a,#00ff6a)
-}
-
-.price-pro .price-header{
-    background: linear-gradient(135deg,#489DD9,#0095ff)
-}
-
-.price-premium .price-header{
-    background: linear-gradient(135deg,#C9078E,#ff00b3)
-}
-
 
 
 
@@ -350,12 +314,12 @@ team section start here  */
     gap: 15px;
 }
 
-#team .box-wrapper .box{
+#team .box-wrapper .box {
     overflow: hidden;
     box-shadow: 2px 5px 7px rgba(51, 51, 51, 0.3);
 }
 
-#team .box-wrapper .image img{
+#team .box-wrapper .image img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -363,17 +327,17 @@ team section start here  */
     filter: grayscale(80%);
 }
 
-#team .box-wrapper .image:hover img{
+#team .box-wrapper .image:hover img {
     filter: grayscale(0%);
 }
 
-#team .box-wrapper .box .details{
+#team .box-wrapper .box .details {
     display: flex;
     flex-direction: column;
     padding: 16px;
 }
 
-#team .box-wrapper .box .details h3{
+#team .box-wrapper .box .details h3 {
     font-size: 26px;
     letter-spacing: 1px;
     color: #000;
@@ -381,14 +345,14 @@ team section start here  */
     line-height: 43px;
 }
 
-#team .box-wrapper .box .details h4{
+#team .box-wrapper .box .details h4 {
     font-size: 15px;
     color: var(--light-color);
     font-weight: normal;
     line-height: 43px;
 }
 
-#team .box-wrapper .box .details p{
+#team .box-wrapper .box .details p {
     font-size: 15px;
     color: var(--black);
     font-weight: normal;
@@ -396,11 +360,11 @@ team section start here  */
 }
 
 
-.team-btn{
+.team-btn {
     margin-top: 18px;
 }
 
-.team-btn .btn{
+.team-btn .btn {
     width: 100%;
     padding: 8px 16px;
     font-size: 15px;
@@ -409,7 +373,7 @@ team section start here  */
     text-transform: capitalize;
 }
 
-.team-btn .btn i{
+.team-btn .btn i {
     width: 15px;
     height: 15px;
     font-size: 15px;
@@ -418,3 +382,129 @@ team section start here  */
 
 /* --------------------------
 team section end here  */
+
+
+
+
+
+
+/* ------------------
+  pricing section end */
+
+#pricing{
+    background-color: var(--light-color);
+}
+
+#pricing .heading{
+    color: #fff;
+}
+
+#pricing .sub-heading{
+    color: #e3e3e3;
+    font-weight: normal;
+}
+
+#pricing .price-card-wrapper {
+    display: grid;
+    gap: 2%;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+}
+
+#pricing .price-card {
+    /* display: flex;
+    flex-direction: column; */
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 1px 7px 9px rgba(51, 51, 51, 0.5);
+}
+
+#pricing .price-premium,
+#pricing .price-basic {
+    margin: 16px 0;
+}
+
+.price-card .price-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    border-radius: 18px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+}
+
+.price-pro .price-header {
+    height: 145px;
+}
+
+.price-card .price-header h3 {
+    width: 50%;
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 38px;
+    border-bottom: 3px solid #fff;
+    text-shadow: 2px 1px 3px rgba(51, 51, 51, 0.5);
+}
+
+.price-basic .price-header,
+.price-premium .price-header,
+.price-btn {
+    background: linear-gradient(135deg, #108ae0, #03fffb);
+}
+
+.price-pro .price-header,
+.price-pro .price-body .subscribe-btn .price-btn {
+    background: linear-gradient(135deg, #fe4a2d, #fe4365);
+}
+
+#pricing .price-card .price-body {
+    padding: 18px;
+}
+
+#pricing .price-card .price-details ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+}
+
+.price-card .price-details ul li {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+#price-tag{
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.subscribe-btn {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.price-btn {
+    width: 70%;
+    color: #fff;
+    padding: 10px 24px;
+    font-size: 15px;
+    line-height: 27px;
+    text-transform: capitalize;
+    transition: all .4s ease-in-out;
+    border-radius: 16px;
+}
+
+.subscribe-btn:hover .price-btn {
+    width: 99%;
+    border-radius: 0;
+    transition: .3s;
+    transform: rotate(-1deg);
+}
