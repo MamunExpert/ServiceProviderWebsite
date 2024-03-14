@@ -508,3 +508,38 @@ team section end here  */
     transition: .3s;
     transform: rotate(-1deg);
 }
+
+
+
+
+/* --------------------------
+pricing breakpoints */
+
+@media screen and (max-width:834px) {
+    #pricing .price-card-wrapper {
+        gap: 2%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .price-pro .price-header {
+        height: 110px;
+    }
+    #pricing .price-premium, #pricing .price-basic {
+        margin: 0;}
+
+    .price-card .price-header h3{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #pricing .price-card-wrapper {
+        gap: 1%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .price-card .price-header h3{
+        width: 60%;
+        font-size: 26px;
+    }
+}
