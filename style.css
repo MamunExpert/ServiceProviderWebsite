@@ -16,8 +16,7 @@ body {
 }
 
 .container {
-    padding: 128px 48px;
-    padding-bottom: 0;
+    padding: 64px 48px;
 }
 
 #home {
