@@ -210,7 +210,7 @@ header breakpoints */
 }
 
 
-@media screen and (min-width:320px) and (max-width:350px){
+@media screen and (min-width:320px) and (max-width:350px) {
     header .front-page h2 {
         font-size: 34px;
         line-height: 48px;
@@ -602,7 +602,7 @@ team section end here  */
 /* ------------------
     partners counter breakpoints */
 @media screen and (max-width:834px) {
-    #achievement .box-wrapper{
+    #achievement .box-wrapper {
         grid-template-columns: repeat(2, 1fr);
         gap: 8%;
     }
@@ -611,7 +611,7 @@ team section end here  */
 
 @media screen and (max-width:480px) {
 
-    #achievement .box-wrapper{
+    #achievement .box-wrapper {
         grid-template-columns: repeat(2, 1fr);
         gap: 2%;
     }
@@ -620,11 +620,12 @@ team section end here  */
         font-size: 16px;
     }
 
-    #partners::after{
+    #partners::after {
         width: 12%;
         background: linear-gradient(to left, rgba(255, 255, 255, 0), #F1F1F1);
     }
-    #partners::before{
+
+    #partners::before {
         width: 12%;
         background: linear-gradient(to right, rgba(255, 255, 255, 0), #F1F1F1);
     }
@@ -632,7 +633,7 @@ team section end here  */
 }
 
 
-@media screen and (min-width:320px) and (max-width:350px){
+@media screen and (min-width:320px) and (max-width:350px) {
     #achievement .box-wrapper .counter-box {
         padding: 24px;
     }
@@ -640,7 +641,7 @@ team section end here  */
     .counter-box .points {
         font-size: 24px;
     }
-    
+
     .counter-box .sector {
         font-size: 12px;
     }
@@ -660,28 +661,29 @@ team section end here  */
 
 /* ------------------
     project work section start here */
-#work .project-wrapper{
+#work .project-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    grid-row-gap: 7%;
+    grid-gap: 30px;
 }
 
-#work .project-wrapper .project-box{
-    max-width: 320px;
+#work .project-wrapper .project-box {
+    max-width: 420px;
     position: relative;
     margin: 0 auto;
     box-shadow: var(--card-shadow);
+    /* margin-top: 5vh; */
 }
 
-.project-wrapper .project-box .front-face{
+.project-wrapper .project-box .front-face {
     width: 100%;
     height: 180px;
     cursor: pointer;
     transition: all .6s ease;
 }
 
-.project-wrapper .project-box .front-face img{
+.project-wrapper .project-box .front-face img {
     height: 100%;
 }
 
@@ -690,7 +692,7 @@ team section end here  */
     filter: opacity(50%);
 } */
 
-.project-wrapper .project-box .back-face{
+.project-wrapper .project-box .back-face {
     width: 100%;
     height: 180px;
     display: flex;
@@ -710,31 +712,31 @@ team section end here  */
     z-index: 1;
 }
 
-.project-wrapper .project-box:hover .back-face{
+.project-wrapper .project-box:hover .back-face {
     opacity: 1;
     transform: translateY(0);
 }
 
-.project-wrapper .project-box:hover .front-face{
+.project-wrapper .project-box:hover .front-face {
     opacity: 0;
     transform: translateY(-110px) rotateX(90deg);
 }
 
-.project-box .back-face h3{
+.project-box .back-face h3 {
     font-size: var(--big);
     text-transform: uppercase;
     font-weight: 800;
     line-height: 32px;
 }
 
-.project-box .back-face h4{
+.project-box .back-face h4 {
     font-size: var(--medium);
     text-transform: uppercase;
     font-weight: 600;
     line-height: 24px;
 }
 
-.project-box .back-face .btn{
+.project-box .back-face .btn {
     font-size: var(--small);
     text-transform: capitalize;
     margin-top: 12px;
@@ -744,6 +746,28 @@ team section end here  */
 
 /* ------------------
     project work section breakpoints */
+
+@media screen and (max-width:884px) {
+    #work .project-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-wrapper .project-box .front-face,
+    .project-wrapper .project-box .back-face {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #work .project-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project-wrapper .project-box .front-face,
+    .project-wrapper .project-box .back-face {
+        height: 230px;
+    }
+}
 
 /* ------------------
     project work section end here */
@@ -889,10 +913,6 @@ pricing section breakpoints */
 }
 
 @media screen and (max-width:480px) {
-    #pricing {
-        padding-top: 0;
-    }
-
     #pricing .price-card-wrapper {
         gap: 1%;
         grid-template-columns: repeat(1, 1fr);
