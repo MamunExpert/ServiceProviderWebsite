@@ -504,11 +504,10 @@ team section end here  */
 }
 
 #achievement .box-wrapper {
-    grid-template-columns: repeat(4, 180px);
-
+    grid-template-columns: repeat(4, 190px);
     justify-content: center;
     align-items: center;
-    gap: 10%;
+    gap: 5%;
 }
 
 #achievement .box-wrapper .counter-box {
@@ -527,12 +526,12 @@ team section end here  */
 }
 
 .counter-box .points {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: bolder;
 }
 
 .counter-box .sector {
-    font-size: 16px;
+    font-size: var(--medium);
     font-weight: normal;
 }
 
@@ -600,6 +599,9 @@ team section end here  */
 }
 
 
+
+/* ------------------
+    partners counter breakpoints */
 @media screen and (max-width:834px) {
     #achievement .box-wrapper{
         grid-template-columns: repeat(2, 1fr);
@@ -613,6 +615,10 @@ team section end here  */
     #achievement .box-wrapper{
         grid-template-columns: repeat(2, 1fr);
         gap: 2%;
+    }
+
+    .counter-box .sector {
+        font-size: 16px;
     }
 
     #partners::after{
@@ -644,6 +650,7 @@ team section end here  */
         margin: 0 18px;
     }
 }
+
 /* ------------------
     achievement counter end here */
 
