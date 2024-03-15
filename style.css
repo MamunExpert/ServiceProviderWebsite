@@ -500,6 +500,8 @@ team section end here  */
     display: flex;
     flex-direction: column;
     gap: 5vh;
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 
 #achievement .box-wrapper {
