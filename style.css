@@ -184,6 +184,27 @@ header social icons  */
 
 /* --------------------------
 header breakpoints */
+
+@media screen and (min-width:320px) and (max-width:350px){
+    header .front-page h2 {
+        font-size: 34px;
+        line-height: 48px;
+    }
+
+    header .front-page p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 12px;
+    }
+
+    header .front-page .btn {
+        width: 100%;
+        padding: 12px 0px;
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+
 @media screen and (max-width:480px) {
     header .front-page {
         padding: 38px;
