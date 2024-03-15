@@ -36,20 +36,19 @@ body {
 }
 
 nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 2px 10px 0px;
     position: fixed;
     z-index: 999;
 }
 
 .navigation {
-    width: 100%;
     text-transform: uppercase;
     font-family: Raleway, sans-serif;
     background: #fff;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 2px 10px 0px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     z-index: 500;
 }
 
@@ -74,7 +73,7 @@ nav {
 .menu-list ul li,
 .menu-list .bar i {
     list-style-type: none;
-    font-size: 15px;
+    font-size: var(--small);
     padding: 16px;
     line-height: 27px;
     letter-spacing: 1px;
@@ -120,7 +119,7 @@ header .front-page h2 {
 
 header .front-page p {
     color: #fff;
-    font-size: 18px;
+    font-size: var(--medium);
     line-height: 30px;
     font-weight: normal;
     margin-top: 20px;
@@ -141,7 +140,7 @@ header .front-page p {
 
 .front-page .btn {
     padding: 12px 24px;
-    font-size: 18px;
+    font-size: var(--medium);
     line-height: 32px;
     text-align: center;
     margin-top: 30px;
@@ -166,7 +165,7 @@ header social icons  */
 }
 
 .social-icon .icons i {
-    font-size: 18px;
+    font-size: var(--medium);
     width: 18px;
     height: 18px;
     color: var(--light-color);
@@ -226,7 +225,7 @@ about section start here  */
 
 .section-header h2 {
     color: var(--brand-color);
-    font-size: 24px;
+    font-size: var(--big);
     text-transform: uppercase;
     line-height: 43px;
     margin-bottom: 16px;
@@ -234,7 +233,7 @@ about section start here  */
 
 .section-header h4 {
     color: var(--black);
-    font-size: 18px;
+    font-size: var(--medium);
     line-height: 32px;
 }
 
@@ -258,7 +257,7 @@ about section start here  */
 }
 
 #about .box-wrapper .box h3 {
-    font-size: 18px;
+    font-size: var(--medium);
     text-transform: capitalize;
     font-weight: normal;
     line-height: 32px;
@@ -273,9 +272,9 @@ about section start here  */
 
 
 
+
 /* --------------------------
 about breakpoints */
-
 
 @media screen and (max-width:834px) {
     .box-wrapper {
@@ -329,21 +328,21 @@ work preview section start here  */
 }
 
 .work-preview .box-wrapper .text-box h2 {
-    font-size: 24px;
+    font-size: var(--big);
     margin: 10px 0;
     line-height: 27px;
 }
 
 .work-preview .box-wrapper .text-box p {
     width: 90%;
-    font-size: 15px;
+    font-size: var(--small);
     margin: 10px 0;
     line-height: 27px;
     margin: 15px 0;
 }
 
 #work-btn .btn {
-    font-size: 15px;
+    font-size: var(--small);
     text-transform: capitalize;
     padding: 8px 16px;
     line-height: 27px;
@@ -354,7 +353,7 @@ work preview section start here  */
     height: 15px;
     display: inline-block;
     color: #fff;
-    font-size: 15px;
+    font-size: var(--small);
     margin-right: 5px;
 }
 
@@ -372,11 +371,8 @@ work preview section start here  */
 }
 
 
-
-
-
-
-
+/* --------------------------
+work preview section breakpoints  */
 
 
 
@@ -427,14 +423,14 @@ team section start here  */
 }
 
 #team .box-wrapper .box .details h4 {
-    font-size: 15px;
+    font-size: var(--small);
     color: var(--light-color);
     font-weight: normal;
     line-height: 43px;
 }
 
 #team .box-wrapper .box .details p {
-    font-size: 15px;
+    font-size: var(--small);
     color: var(--black);
     font-weight: normal;
     line-height: 27px;
@@ -448,7 +444,7 @@ team section start here  */
 .team-btn .btn {
     width: 100%;
     padding: 8px 16px;
-    font-size: 15px;
+    font-size: var(--small);
     line-height: 27px;
     margin: 0 auto;
     text-transform: capitalize;
@@ -457,7 +453,7 @@ team section start here  */
 .team-btn .btn i {
     width: 15px;
     height: 15px;
-    font-size: 15px;
+    font-size: var(--small);
     line-height: 15px;
 }
 
@@ -473,7 +469,7 @@ team section end here  */
   pricing section end */
 
 #pricing {
-    background-color: var(--light-color);
+    background-color: var(--ultra-light-color);
 }
 
 #pricing .heading {
@@ -576,7 +572,7 @@ team section end here  */
     width: 70%;
     color: #fff;
     padding: 10px 24px;
-    font-size: 15px;
+    font-size: var(--small);
     line-height: 27px;
     text-transform: capitalize;
     transition: all .4s ease-in-out;
@@ -594,7 +590,7 @@ team section end here  */
 
 
 /* --------------------------
-pricing breakpoints */
+pricing section breakpoints */
 
 @media screen and (max-width:834px) {
     #pricing .price-card-wrapper {
