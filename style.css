@@ -705,7 +705,7 @@ team section end here  */
     top: 0;
     left: 0;
     backface-visibility: hidden;
-    background: #fff;
+    background: #f5fffe;
     transform: translateY(110px) rotateX(-90deg);
     transition: all .6s ease;
     opacity: 0;
