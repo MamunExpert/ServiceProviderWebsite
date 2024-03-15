@@ -9,6 +9,7 @@
     --dark-color: #219150;
     --black: #444;
     --light-color: #666;
+    --ultra-light-color: #F1F1F1
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 }
 
 .container {
-    padding: 64px 48px;
+    padding: 128px 48px;
 }
 
 #home {
@@ -124,6 +125,7 @@ header .front-page p {
 }
 
 .btn {
+    display: inline-block;
     color: #fff;
     background-color: var(--brand-color);
     outline: none;
@@ -301,6 +303,84 @@ about breakpoints */
 
 /* ------------------
   about section end */
+
+
+
+
+
+
+/* --------------------------
+work preview section start here  */
+
+.work-preview{
+    background:var(--ultra-light-color);
+}
+
+.work-preview .box-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+}
+
+.work-preview .box-wrapper .text-box{
+    padding: 0 8px;
+}
+
+.work-preview .box-wrapper .text-box h2{
+    font-size: 24px;
+    margin: 10px 0;
+    line-height: 27px;
+}
+
+.work-preview .box-wrapper .text-box p{
+    width: 90%;
+    font-size: 15px;
+    margin: 10px 0;
+    line-height: 27px;
+    margin: 15px 0;
+}
+
+#work-btn .btn{
+    font-size: 15px;
+    text-transform: capitalize;
+    padding: 8px 16px;
+    line-height: 27px;
+}
+
+#work-btn .btn i{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+
+.work-preview .box-wrapper .image-box{
+    max-width: 700px;
+    aspect-ratio: auto 700 / 394;
+}
+
+.work-preview .box-wrapper .image-box img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------
+work preview section end here  */
 
 
 
