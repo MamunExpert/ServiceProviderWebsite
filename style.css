@@ -402,6 +402,10 @@ work preview section breakpoints  */
     .work-preview .box-wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .work-preview .box-wrapper{
+        padding: 0;
+    }
 }
 
 /* --------------------------
@@ -766,7 +770,7 @@ team section end here  */
 
     .project-wrapper .project-box .front-face,
     .project-wrapper .project-box .back-face {
-        height: 230px;
+        height: 220px;
     }
 
     #partners .sliders i{
