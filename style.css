@@ -1054,3 +1054,82 @@ pricing section end here */
 
 /* ------------------
   skills section end here*/
+
+
+
+
+
+/* ------------------
+  footer section start here*/
+footer{
+    width: 100%;
+    height: 30vh;
+    background: var(--black);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+#fly-btn i{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    color: #fff;
+    font-size: var(--small);
+    margin-right: 1vw;
+}
+
+#fly-btn .btn{
+    font-size: var(--small);
+    padding: 1.5vh 2vw;
+    line-height: 4vh;
+    font-weight: bold;
+    margin-top: 2vh;
+}
+
+#social-icons{
+    display: flex;
+    align-items: center;
+    gap: .8vh;
+}
+
+#social-icons i{
+    font-size: var(--medium);
+    width: 3vh;
+    height: 3vh;
+    color: #fff;
+    line-height: 3vh;
+    cursor: pointer;
+}
+
+#social-icons i:hover,
+#copyright h5 a:hover{
+    color: var(--brand-color);
+}
+
+#copyright h5{
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+    color: #bbbbbb;
+    line-height: 3vh;
+}
+
+#copyright h5 a{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ------------------
+  footer section end here*/
