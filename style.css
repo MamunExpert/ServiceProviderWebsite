@@ -870,6 +870,20 @@ team section end here  */
 
 
 /* ------------------
+  skills section breakpoints*/
+@media screen and (max-width:884px){
+
+}
+
+@media screen and (max-width:480px){
+    #skills .section-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:350px){ }
+
+/* ------------------
   skills section end here*/
 
 
