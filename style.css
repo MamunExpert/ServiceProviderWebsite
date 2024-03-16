@@ -403,7 +403,7 @@ work preview section breakpoints  */
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .work-preview .box-wrapper{
+    .work-preview .box-wrapper {
         padding: 0;
     }
 }
@@ -773,12 +773,13 @@ team section end here  */
         height: 220px;
     }
 
-    #partners .sliders i{
+    #partners .sliders i {
         margin: 0 8px;
     }
 }
 
-@media screen and (min-width:320px) and (max-width:350px){ 
+@media screen and (min-width:320px) and (max-width:350px) {
+
     .project-wrapper .project-box .front-face,
     .project-wrapper .project-box .back-face {
         height: 190px;
@@ -787,120 +788,6 @@ team section end here  */
 
 /* ------------------
   project work section end here */
-
-
-
-
-
-
-/* ------------------
-  skills section start here*/
-#skills {
-    background: var(--ultra-light-color);
-}
-
-#skills .section-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2%;
-}
-
-#skills .section-wrapper .text-col,
-#skills .section-wrapper .skills-col{
-    padding: 0 8px;
-}
-
-.text-col h2{
-    font-size: var(--big);
-    margin-bottom: var(--big);
-    line-height: 27px;
-    text-transform: capitalize;
-}
-
-.text-col article h3{
-    font-size: var(--small);
-}
-
-.text-col p{
-    width: 90%;
-    font-size: var(--small);
-    line-height: 27px;
-    margin: 15px 0;
-}
-
-.skills-col .skills-item span {
-    font-size: var(--small);
-    text-transform: capitalize;
-    font-weight: bold;
-    letter-spacing: 2px;
-    line-height: 27px;
-}
-
-
-.skills-col .skills-item .skill-bar {
-    height: 24px;
-    background: #ccc;
-    margin-top: 4px;
-    margin-bottom: var(--big);
-    border-radius: var(--big);
-    position: relative;
-}
-
-.skills-col .skills-item .wdd::after,
-.skills-col .skills-item .app::after,
-.skills-col .skills-item .graphics::after,
-.skills-col .skills-item .animation::after {
-    position: absolute;
-    width: 85%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #ff542e;
-    border-radius: var(--big);
-
-    content: "90%";
-    font-size: var(--small);
-    color: #fff;
-    text-align: right;
-    padding-right: 5%;
-}
-
-.skills-col .skills-item .app::after {
-    width: 65%;
-    background: #2e5fff;
-    content: "70%";
-}
-
-.skills-col .skills-item .graphics::after {
-    width: 75%;
-    background: #ff2e74;
-    content: "80%";
-}
-
-.skills-col .skills-item .animation::after {
-    width: 45%;
-    background: #4737db;
-    content: "50%";
-}
-
-
-/* ------------------
-  skills section breakpoints*/
-@media screen and (max-width:884px){
-    .text-col p {
-        width:100%;}
-}
-
-@media screen and (max-width:480px){
-    #skills .section-wrapper {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 5%;
-    }
-}
-
-/* ------------------
-  skills section end here*/
-
 
 
 
@@ -1053,3 +940,117 @@ pricing section breakpoints */
         font-size: 26px;
     }
 }
+
+/* --------------------------
+pricing section end here */
+
+
+
+
+
+
+/* ------------------
+  skills section start here*/
+
+#skills .section-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2%;
+}
+
+#skills .section-wrapper .text-col,
+#skills .section-wrapper .skills-col {
+    padding: 0 8px;
+}
+
+.text-col h2 {
+    font-size: var(--big);
+    margin-bottom: var(--big);
+    line-height: 27px;
+    text-transform: capitalize;
+}
+
+.text-col article h3 {
+    font-size: var(--small);
+}
+
+.text-col p {
+    width: 90%;
+    font-size: var(--small);
+    line-height: 27px;
+    margin: 15px 0;
+}
+
+.skills-col .skills-item span {
+    font-size: var(--small);
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 27px;
+}
+
+
+.skills-col .skills-item .skill-bar {
+    height: 24px;
+    background: #ccc;
+    margin-top: 4px;
+    margin-bottom: var(--big);
+    border-radius: var(--big);
+    position: relative;
+}
+
+.skills-col .skills-item .wdd::after,
+.skills-col .skills-item .app::after,
+.skills-col .skills-item .graphics::after,
+.skills-col .skills-item .animation::after {
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #ff542e;
+    border-radius: var(--big);
+
+    content: "90%";
+    font-size: var(--small);
+    color: #fff;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.skills-col .skills-item .app::after {
+    width: 65%;
+    background: #2e5fff;
+    content: "70%";
+}
+
+.skills-col .skills-item .graphics::after {
+    width: 75%;
+    background: #ff2e74;
+    content: "80%";
+}
+
+.skills-col .skills-item .animation::after {
+    width: 45%;
+    background: #4737db;
+    content: "50%";
+}
+
+
+/* ------------------
+  skills section breakpoints*/
+@media screen and (max-width:884px) {
+    .text-col p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #skills .section-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5%;
+    }
+}
+
+/* ------------------
+  skills section end here*/
