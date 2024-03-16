@@ -768,6 +768,17 @@ team section end here  */
     .project-wrapper .project-box .back-face {
         height: 230px;
     }
+
+    #partners .sliders i{
+        margin: 0 8px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:350px){ 
+    .project-wrapper .project-box .front-face,
+    .project-wrapper .project-box .back-face {
+        height: 190px;
+    }
 }
 
 /* ------------------
@@ -881,10 +892,6 @@ team section end here  */
         grid-template-columns: repeat(1, 1fr);
         gap: 5%;
     }
-}
-
-@media screen and (min-width:320px) and (max-width:350px){ 
-    
 }
 
 /* ------------------
