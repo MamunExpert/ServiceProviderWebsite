@@ -56,7 +56,6 @@ nav {
 .logo {
     text-decoration: none;
     font-size: 26px;
-    padding-left: 16px;
     color: var(--brand-color);
     letter-spacing: 1px;
     cursor: pointer;
@@ -182,7 +181,6 @@ header breakpoints */
         padding: 38px;
     }
 
-    .menu-list a,
     .navigation a {
         padding: 0 16px;
     }
