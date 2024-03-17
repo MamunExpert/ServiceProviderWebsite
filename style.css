@@ -254,6 +254,7 @@ about section start here  */
 }
 
 .section-header h4 {
+    width: 95%;
     color: var(--black);
     font-size: var(--medium);
     line-height: 32px;
@@ -498,8 +499,6 @@ team section end here  */
     display: flex;
     flex-direction: column;
     gap: 5vh;
-    padding-top: 64px;
-    padding-bottom: 64px;
 }
 
 #achievement .box-wrapper {
@@ -1057,13 +1056,13 @@ pricing section end here */
 
 /* ------------------
   contact section start here*/
-#contact{
+#contact {
     background: var(--ultra-light-color);
 }
 
 .contact-form {
     display: grid;
-    grid-template-columns: repeat(2,29% 69%);
+    grid-template-columns: repeat(2, 29% 69%);
     align-items: center;
     background: var(--light-color);
     padding: var(--big);
@@ -1148,14 +1147,14 @@ pricing section end here */
 }
 
 
-.form-area form .btn{
+.form-area form .btn {
     font-size: var(--small);
     text-transform: capitalize;
     padding: 8px 16px;
     line-height: 27px;
 }
 
-#map img{
+#map img {
     width: 100%;
     margin-top: 48px;
     filter: grayscale(75%);
@@ -1165,12 +1164,12 @@ pricing section end here */
 
 /* ------------------
   contact section breakpoints*/
-  @media screen and (max-width:480px){
+@media screen and (max-width:480px) {
     .contact-form {
         grid-template-columns: repeat(1, 1fr);
         column-gap: 0;
     }
-  }
+}
 
 
 
