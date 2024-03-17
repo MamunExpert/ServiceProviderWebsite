@@ -1,4 +1,4 @@
-Responsive Service Provider website landing page
+Responsive Service Provider Website
 ========================
 
 
