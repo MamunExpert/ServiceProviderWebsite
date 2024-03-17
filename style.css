@@ -182,6 +182,11 @@ header breakpoints */
         padding: 38px;
     }
 
+    .menu-list a,
+    .navigation a {
+        padding: 0 16px;
+    }
+
     header .front-page h2 {
         font-size: 40px;
         line-height: 64px;
@@ -1106,7 +1111,8 @@ pricing section end here */
 .address-area .items-wrapper .item p {
     color: #fff;
     font-size: 15px;
-    line-height: 18px;}
+    line-height: 18px;
+}
 
 
 .contact-form .form-area {
@@ -1164,7 +1170,7 @@ pricing section end here */
     aspect-ratio: auto 6/9;
 }
 
-#map img:hover{
+#map img:hover {
     filter: grayscale(0);
     filter: contrast(130%);
 }
@@ -1189,13 +1195,14 @@ pricing section end here */
     }
 }
 
-@media screen and (min-width:320px) and (max-width:350px){
+@media screen and (min-width:320px) and (max-width:350px) {
+
     .contact-form .address-area,
-    .contact-form .form-area{
+    .contact-form .form-area {
         width: 85%;
     }
 
-    
+
 }
 
 /* ------------------
