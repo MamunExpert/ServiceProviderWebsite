@@ -1087,6 +1087,10 @@ pricing section end here */
 }
 
 .contact-form .address-area .items-wrapper .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
     text-align: center;
 }
 
@@ -1169,9 +1173,25 @@ pricing section end here */
         grid-template-columns: repeat(1, 1fr);
         column-gap: 0;
     }
+
+    .contact-form .address-area .items-wrapper {
+        gap: 12px;
+    }
+
+    .address-area .items-wrapper .item p {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
+@media screen and (min-width:320px) and (max-width:350px){
+    .contact-form .address-area,
+    .contact-form .form-area{
+        width: 85%;
+    }
 
+    
+}
 
 /* ------------------
   contact section end here*/
