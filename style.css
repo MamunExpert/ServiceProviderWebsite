@@ -1096,20 +1096,19 @@ pricing section end here */
 }
 
 .address-area .items-wrapper .item i {
-    font-size: 18px;
-    width: 35px;
-    height: 35px;
+    font-size: 16px;
+    width: 28px;
+    height: 28px;
     color: var(--brand-color);
     background: #fff;
-    line-height: 35px;
+    line-height: 28px;
     border-radius: 50%;
 }
 
 .address-area .items-wrapper .item p {
-    font-size: 16px;
     color: #fff;
-    line-height: 32px;
-}
+    font-size: 15px;
+    line-height: 18px;}
 
 
 .contact-form .form-area {
@@ -1175,6 +1174,7 @@ pricing section end here */
 
 /* ------------------
   contact section breakpoints*/
+
 @media screen and (max-width:480px) {
     .contact-form {
         grid-template-columns: repeat(1, 1fr);
