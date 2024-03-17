@@ -56,11 +56,6 @@ nav {
     z-index: 500;
 }
 
-.menu-list ul {
-    display: flex;
-    align-items: center;
-}
-
 .logo {
     font-size: 26px;
     padding-left: 16px;
@@ -70,12 +65,17 @@ nav {
     line-height: 27px;
 }
 
-.menu-list .bar i {
-    display: none;
+.menu-list {
+    display: flex;
+    align-items: center;
 }
 
-.menu-list ul li,
-.menu-list .bar i {
+.menu-list a,
+.navigation a{
+    font-size: 14px;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
     list-style-type: none;
     font-size: var(--small);
     padding: 16px;
@@ -83,23 +83,19 @@ nav {
     letter-spacing: 1px;
 }
 
-.menu-list ul li:hover {
+.menu-list a i{
+    font-size: 13px;
+    margin-right: 2px;
+}
+
+.menu-list a:hover {
+    color: #fff;
     background-color: var(--brand-color);
 }
 
-.menu-list ul a {
-    text-decoration: none;
-    color: var(--black);
+.navigation .bar {
+    display: none;
 }
-
-.menu-list ul a:hover {
-    color: #fff;
-}
-
-.menu-list ul .bar a:hover {
-    color: var(--brand-color);
-}
-
 
 
 /* --------------------------
@@ -200,11 +196,11 @@ header breakpoints */
         letter-spacing: 1px;
     }
 
-    .menu-list li {
+    .menu-list {
         display: none;
     }
 
-    .menu-list .bar i {
+    .navigation .bar {
         display: block;
     }
 }
@@ -1008,7 +1004,7 @@ pricing section end here */
     height: 100%;
     top: 0;
     left: 0;
-    background: #ff542e;
+    background: var(--brand-color);
     border-radius: var(--big);
 
     content: "90%";
@@ -1020,19 +1016,19 @@ pricing section end here */
 
 .skills-col .skills-item .app::after {
     width: 65%;
-    background: #2e5fff;
+    background: #108ae0;
     content: "70%";
 }
 
 .skills-col .skills-item .graphics::after {
     width: 75%;
-    background: #ff2e74;
+    background: var(--brand-color);
     content: "80%";
 }
 
 .skills-col .skills-item .animation::after {
     width: 45%;
-    background: #4737db;
+    background: #108ae0;
     content: "50%";
 }
 
@@ -1058,6 +1054,18 @@ pricing section end here */
 
 
 
+
+
+
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 25% 75%);
+    align-items: center;
+    gap: 2%;
+}
+
+  
 
 /* ------------------
   footer section start here*/
